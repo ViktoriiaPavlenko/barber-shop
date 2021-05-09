@@ -1,0 +1,68 @@
+.container {
+  width: 1920px;
+  outline: 2px solid tomato;
+}
+.header .container {
+  display: flex;
+  padding-left: 170px;
+  padding-right: 213px;
+  justify-content: space-between;
+}
+.nav-list {
+  display: flex;
+}
+.button-list {
+  display: flex;
+  align-items: center;
+  padding-top: 46px;
+  padding-bottom: 17px;
+}
+.button-list li:not(:last-child) {
+  margin-right: 72px;
+}
+.logo-wrapper {
+  position: relative;
+}
+.logo-item {
+  height: 102px;
+}
+.logo-text {
+  position: absolute;
+  bottom: 28px;
+  left: 68px;
+  height: 53px;
+  margin-top: 59px;
+  width: 91px;
+}
+.nav-list li:not(:last-child) {
+  margin-right: 20px;
+}
+.nav-list a {
+  display: block;
+  font-size: 25px;
+  line-height: 1.34;
+  font-weight: 500;
+  padding: 67px 14px 8px;
+  color: #000000;
+}
+.nav-list a:hover,
+.nav-list a:focus {
+  background-color: #a3c1ef;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.button-list button {
+  border: none;
+  background-color: transparent;
+}
+.button-list .appointment {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: #99baed;
+  padding: 23px 32px;
+  border-radius: 20px;
+  border: none;
+}
