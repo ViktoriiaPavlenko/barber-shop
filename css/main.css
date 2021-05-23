@@ -1,68 +1,99 @@
+:root {
+  --primary-text-color: #153461;
+  --primary-title-color: #163561;
+  --white-color: #ffffff;
+  --accent-color: #99baed;
+  --secondary-title-color: #fbb400;
+}
+body {
+  font-family: 'Catamaran', sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  color: var(--primary-text-color);
+}
 .container {
   width: 1920px;
-  outline: 2px solid tomato;
+  outline: 1px solid tomato;
 }
+
 .header .container {
   display: flex;
   padding-left: 170px;
   padding-right: 213px;
   justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  width: 163px;
+  margin-right: 110px;
+}
+
+.logo-text {
+  position: absolute;
+  font-weight: 600;
+  font-size: 40px;
+  left: 222px;
+  margin-top: 59px;
+  line-height: 1.34;
+  color: var(--accent-color);
+}
+.logo-item {
+  position: relative;
+  margin-top: 30px;
 }
 .nav-list {
   display: flex;
-}
-.button-list {
-  display: flex;
-  align-items: center;
-  padding-top: 46px;
-  padding-bottom: 17px;
-}
-.button-list li:not(:last-child) {
-  margin-right: 72px;
-}
-.logo-wrapper {
-  position: relative;
-}
-.logo-item {
-  height: 102px;
-}
-.logo-text {
-  position: absolute;
-  bottom: 28px;
-  left: 68px;
-  height: 53px;
-  margin-top: 59px;
-  width: 91px;
 }
 .nav-list li:not(:last-child) {
   margin-right: 20px;
 }
 .nav-list a {
   display: block;
-  font-size: 25px;
   line-height: 1.34;
   font-weight: 500;
-  padding: 67px 14px 8px;
-  color: #000000;
+  padding: 64px 14px 8px;
+  color: var(--primary-title-color);
+}
+.nav-list .current {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  border-radius: 5px;
 }
 .nav-list a:hover,
 .nav-list a:focus {
-  background-color: #a3c1ef;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--white-color);
   border-radius: 5px;
 }
+.button-list {
+  display: flex;
+  padding-top: 46px;
+  align-items: center;
+  margin-left: auto;
+}
+.button-list li:not(:last-child) {
+  margin-right: 72px;
+}
 .button-list button {
+  background: transparent;
   border: none;
-  background-color: transparent;
 }
 .button-list .appointment {
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #ffffff;
-  background-color: #99baed;
-  padding: 23px 32px;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  padding: 23px 33px;
   border-radius: 20px;
-  border: none;
+}
+.button-list .appointment:hover,
+.button-list .appointment:focus {
+  box-shadow: 0 10px 50px var(--accent-color);
 }
