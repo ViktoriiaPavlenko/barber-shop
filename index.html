@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
 </head>
@@ -16,21 +17,37 @@
     <header class="header">
         <div class="container">
             <div class="logo-wrapper">
-                <img class="logo-item" src="./images/logo.svg" alt="logo" width="75" height="75">
+                <svg class="logo-item animate__bounceInUp animate__animated" width="75" height="75">
+                    <use href="./images/icons.svg#logo"></use>
+                </svg>
                 <p class="logo-text">arber</p>
             </div>
             <nav>
                 <ul class="nav-list">
-                    <li><a class="current" href="./index.html">Home</a></li>
-                    <li><a href="#history">History</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#chapter-history">History</a></li>
+                    <li><a href="#chapter-services">Service</a></li>
+                    <li><a href="#chapter-gallery">Gallery</a></li>
                 </ul>
             </nav>
             <ul class="button-list">
-                <li><button type="button"><img src="./images/profile.svg" alt="icon profile" width="42" height="42"></button></li>
-                <li><button type="button"><img src="./images/notification.svg" alt="icon notification" width="42"height="42"></button></li>
-                <li><button class="appointment" type="button">Appointment</button></li>
+                <li>
+                    <button type="button">
+                        <svg width="42" height="42">
+                            <use href="./images/icons.svg#profile"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button type="button">
+                        <svg width="42" height="42">
+                            <use href="./images/icons.svg#notification"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li>
+                    <button class="appointment" type="button">Appointment</button>
+                </li>
             </ul>
         </div>
     </header>
@@ -45,12 +62,12 @@
         </section>
         <!-- Our History -->
         <section class="history">
-            <div class="container">
-                <h2 class="title">Our History</h2>
+            <div class="container" id="chapter-history">
+                <h2 class="title history-title">Our <span class="accent-title">History</span></h2>
                 <ul class="history-list">
-                    <li class="history-text"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at.</p>
+                    <li class="history-text"><p class="history-list-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at.</p>
                     </li>
-                    <li class="history-text"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at.</p>
+                    <li class="history-text"><p class="history-list-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at.</p>
                     </li>
                 </ul>
                 <button class="appointment" type="button">Learn more</button>
@@ -58,13 +75,13 @@
         </section>
         <!-- Services We Provide -->
         <section class="services">
-            <div class="container">
+            <div class="container" id="chapter-services">
                 <h2 class="title">Services We <br> <span class="accent-title">Provide</span> </h2>
                 <ul class="services-list">
                     <li class="services-item">
                         <div class="icon-wrapper">
                             <svg class="services-icon" width="65" height="58">
-                                <use href="./images/symbol-defs.svg#scissors"></use>
+                                <use href="./images/icons.svg#scissors"></use>
                             </svg>
                         </div>
                         <h3 class="services-title">Hair Cut</h3>
@@ -74,7 +91,7 @@
                     <li class="services-item">
                         <div class="icon-wrapper">
                             <svg class="services-icon" width="68" height="68">
-                                <use href="./images/symbol-defs.svg#razor"></use>
+                                <use href="./images/icons.svg#razor"></use>
                             </svg>
                         </div>
                         <h3 class="services-title">Beard Cut</h3>
@@ -84,7 +101,7 @@
                     <li class="services-item">
                         <div class="icon-wrapper">
                             <svg class="services-icon" width="66" height="66">
-                                <use href="./images/symbol-defs.svg#cleanser"></use>
+                                <use href="./images/icons.svg#cleanser"></use>
                             </svg>
                         </div>
                         <h3 class="services-title">Facial Pack</h3>
@@ -94,6 +111,66 @@
                 </ul>
             </div>
         </section>
+        <section class="gallery">
+            <div class="container" id="chapter-gallery">
+                <h2 class="title">Our <span class="accent-title">Gallery</span></h2>
+                <ul class="gallery-list">
+                    <li class="gallery-list-item">
+                        <img src="./images/gallery1.jpg" alt="Master is shaving beard" width="435" height="435">
+                    </li>
+                    <li class="gallery-list-item">
+                        <img src="./images/gallery2.jpg" alt="Master is trimming hair" width="435" height="435">
+                    </li>
+                    <li class="gallery-list-item">
+                        <img src="./images/gallery3.jpg" alt="Master is trimming hair" width="435" height="435">
+                    </li>
+                    <li class="gallery-list-item">
+                        <img src="./images/gallery4.jpg" alt="Master is shaving beard" width="435" height="435">
+                    </li>
+                    <li class="gallery-list-item">
+                        <img src="./images/gallery5.jpg" alt="Master is shaving beard" width="435" height="435">
+                    </li>
+                    <li class="gallery-list-item">
+                        <img src="./images/gallery6.jpg" alt="Master is shaving beard" width="435" height="435">
+                    </li>
+                </ul>
+                <button class="appointment" type="button">View all</button>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="logo-wrapper">
+                <svg class="logo-item" width="75" height="75">
+                    <use href="./images/icons.svg#logo"></use>
+                </svg>
+                <p class="logo-text">arber</p>
+            </div>
+            <p class="footer-text">It is a long established fact that a reader will be <br> distracted by the readable</p>
+            <ul class="social-list">
+                <li class="social-list-item">
+                    <a class="social-link" href="">
+                        <svg class="social-link-icon" width="19" height="38">
+                            <use href="./images/icons.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="social-link" href="">
+                        <svg class="social-link-icon" width="32" height="26">
+                            <use href="./images/icons.svg#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-list-item">
+                    <a class="social-link" href="">
+                        <svg class="social-link-icon" width="28" height="29">
+                            <use href="./images/icons.svg#google"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
