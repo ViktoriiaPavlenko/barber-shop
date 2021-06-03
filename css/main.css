@@ -17,6 +17,8 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.5;
   color: var(--primary-text-color);
+
+  padding-top: 139px;
 }
 button {
   background-color: transparent;
@@ -34,6 +36,16 @@ img {
 
 /* ------HEADER------ */
 
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: 139px;
+  background-color: var(--white-color);
+
+  z-index: 5;
+}
 .header .container {
   display: flex;
   padding-left: 170px;
